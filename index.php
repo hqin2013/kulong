@@ -20,6 +20,26 @@ Config::load('./config.php');
 // custom config file to be written to by a bash script or something
 Config::load('./custom_config.php');
 
+//////////////////////////////////////////////////////////////////////////
+// 20170721
+$p = array();
+if (isset($_POST['server'])&&$_POST['server']=="2"){
+    $p= array(
+        CURLOPT_PROXY => '1.1.1.1',
+        CURLOPT_PROXYUSERPWD => 'user:password',
+        CURLOPT_CONNECTTIMEOUT => 5
+    );
+}elseif (isset($_POST['server'])&&$_POST['server']=="3"){
+    $p= array(
+        CURLOPT_PROXY => '1.1.1.1',
+        CURLOPT_PROXYUSERPWD => 'user:password',
+        CURLOPT_CONNECTTIMEOUT => 5
+    );
+}
+Config::set("curl",$p);
+print_r(Config::get("curl"));
+//////////////////////////////////////////////////////////////////////////
+
 if(!Config::get('app_key')){
 	die("app_key inside config.php cannot be empty!");
 }
