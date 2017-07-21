@@ -17,10 +17,10 @@
 
         <nav class="menu_main">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="https://www.aproxy.club">Proxy List</a></li>
+                <li><a href="./">Home</a></li>
+                <li><a href="https://www.aproxy.club" target="_blank">Proxy List</a></li>
                 <li><a href="./youtubedownload.php">Youtube Download</a></li>
-                <li><a href="https://www.canivisit.com">Can I Visit?</a></li>
+                <li><a href="https://www.canivisit.com" target="_blank">Can I Visit?</a></li>
             </ul>
         </nav>
     </header>
