@@ -36,7 +36,7 @@ if (isset($_POST['server'])&&$_POST['server']=="2"){
         CURLOPT_CONNECTTIMEOUT => 5
     );
 }
-Config::set("curl",$p);
+//Config::set("curl",$p);
 //print_r(Config::get("curl"));
 //////////////////////////////////////////////////////////////////////////
 
