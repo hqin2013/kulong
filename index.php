@@ -37,7 +37,7 @@ if (isset($_POST['server'])&&$_POST['server']=="2"){
     );
 }
 Config::set("curl",$p);
-print_r(Config::get("curl"));
+//print_r(Config::get("curl"));
 //////////////////////////////////////////////////////////////////////////
 
 if(!Config::get('app_key')){
